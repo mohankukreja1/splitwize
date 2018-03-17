@@ -8,10 +8,11 @@ const app=express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 const friendsroute=require('./routes/friends').route
-
+const savename=require('./routes/savename').route
 
 
 app.use('/friends',friendsroute);
+app.use('/savename',savename);
 app.use('/',express.static(path.join(__dirname,'public_static')));
 
 app.listen(2222,()=>{

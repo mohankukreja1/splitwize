@@ -6,6 +6,10 @@ const db=new Sequelize('splitwizedb','splituser','splitpass',{
     dialect:'mysql'
 })
 
+const savename=db.define('savename',{
+    name:datatypes.STRING
+})
+
 
 const table=db.define('splittable',{
     id: {
@@ -25,5 +29,5 @@ db.sync({force: true})
     .catch((err) => console.error(err));
 
 module.exports={
-    table
+    table,savename
 }
