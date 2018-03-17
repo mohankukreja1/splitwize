@@ -27,20 +27,20 @@
 <br>
 
 <div class="container">
-    <form>
+    <form action="/friends" method="post" >
         <div class="form-group">
             <label>Name</label>
-            <input type="email" class="form-control" id="Name" aria-describedby="emailHelp" placeholder="Enter Name">
+            <input name="name" type="text" class="form-control" id="Name" aria-describedby="emailHelp" placeholder="Enter Name">
 
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
             <label>Money Settlement</label>
-            <input type="email" class="form-control" id="Money" aria-describedby="emailHelp" placeholder="Enter Money">
+            <input name="money" type="number" class="form-control" id="Money" aria-describedby="emailHelp" placeholder="Enter Money">
 
         </div>
         <div class="form-check">

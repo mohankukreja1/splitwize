@@ -7,7 +7,7 @@ const db=new Sequelize('splitwizedb','splituser','splitpass',{
 })
 
 
-const splittable=db.define('splittable',{
+const table=db.define('splittable',{
     id: {
         type: datatypes.INTEGER,
         primaryKey: true,
@@ -22,8 +22,8 @@ const splittable=db.define('splittable',{
 
 db.sync({force: true})
     .then(() => console.info("Database configured"))
-    .catch((err) => console.error(err))
+    .catch((err) => console.error(err));
 
-exports.models = {
-   splittable
+module.exports={
+    table
 }

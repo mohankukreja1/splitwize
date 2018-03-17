@@ -5,14 +5,13 @@ const bodyParser=require('body-parser')
 
 
 const app=express();
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+const friendsroute=require('./routes/friends').route
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
 
-app.get('/hello',(req,res)=>{
-    res.send('hello');
-})
 
+app.use('/friends',friendsroute);
 app.use('/',express.static(path.join(__dirname,'public_static')));
 
 app.listen(2222,()=>{
