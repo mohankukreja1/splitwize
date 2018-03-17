@@ -7,6 +7,9 @@ const bodyParser=require('body-parser')
 const app=express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.set("view engine", "hbs");
+app.set("views", path.join(__dirname, "views"))
+
 const friendsroute=require('./routes/friends').route
 const savename=require('./routes/savename').route
 
