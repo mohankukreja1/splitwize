@@ -51,11 +51,18 @@ route.get('/',(req,res)=>{
         else{
             money = result[0].dataValues.moneytotake;
         }
+        res.render('friends',{
+            money:money,
+            obj:result[0].dataValues ,
+            mainname:mainname
+        })
 
     })
         .catch((err)=>{
             console.log(err);
         })
+
+
 })
 
 exports.route = route;

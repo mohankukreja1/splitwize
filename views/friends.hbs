@@ -5,10 +5,11 @@
     <title>Friends</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 </head>
 <body>
-div class="container">
+<div class="container">
 <div class="row" style="background-color:cyan">
 
     <h1 style="font-family: AppleMyungjo ;margin: auto; color: blue;" >Friends</h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="friends.png" alt="not found">
@@ -22,6 +23,59 @@ div class="container">
 <br>
 <br>
 <br>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            {{#if obj.moneytotake}}
+
+                <div class="card" style="width: 220px">
+                    <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-right"></i>
+                    <div class="card-body">
+                        <h5 class="card-title"><b>{{mainname}}</b></h5>
+                        <p class="card-text">money to be Paid :<b>₹{{obj.moneytotake}}</b></p>
+
+                    </div>
+                </div>
+            {{else}}
+                <div class="card" style="width: 220px">
+                    <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-left"></i>
+                    <div class="card-body">
+                        <h5 class="card-title"><b>{{mainname}}</b></h5>
+                        <p class="card-text">money to be taken :<b>₹{{obj.moneytogive}}</b></p>
+
+                    </div>
+                </div>
+
+            {{/if}}
+
+
+        </div>
+        <div class="col-6">
+            {{#if obj.moneytotake}}
+
+                <div class="card" style="width: 220px">
+                    <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-left"></i>
+                    <div class="card-body">
+                        <h5 class="card-title"><b>{{obj.name}}</b></h5>
+                        <p class="card-text">money to be Taken :<b>₹{{obj.moneytotake}}</b></p>
+
+                    </div>
+                </div>
+            {{else}}
+                <div class="card" style="width: 220px">
+                    <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-right"></i>
+                    <div class="card-body">
+                        <h5 class="card-title"><b>{{obj.name}}</b></h5>
+                        <p class="card-text">money to be given :<b>₹{{obj.moneytogive}}</b></p>
+
+                    </div>
+                </div>
+
+            {{/if}}
+
+        </div>
+    </div>
+</div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
