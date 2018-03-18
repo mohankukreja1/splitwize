@@ -12,8 +12,9 @@ app.set("views", path.join(__dirname, "views"))
 
 const friendsroute=require('./routes/friends').route
 const savename=require('./routes/savename').route
+const clearroute=require('./routes/clearall').route
 
-
+app.use('/clearall',clearroute);
 app.use('/friends',friendsroute);
 app.use('/savename',savename);
 app.use('/',express.static(path.join(__dirname,'public_static')));
