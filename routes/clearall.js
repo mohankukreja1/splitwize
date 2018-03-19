@@ -21,7 +21,12 @@ route.get('/',(req,res)=>{
             })
 
         table.findAll({}).then((result)=>{
-            console.log(result)
+
+            res.render('friends',{
+                mainname:mainname,
+                obj:result[0].dataValues,
+
+            })
         }).catch((err)=>{
             console.log(err);
         })
