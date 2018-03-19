@@ -13,7 +13,10 @@ app.set("views", path.join(__dirname, "views"))
 const friendsroute=require('./routes/friends').route
 const savename=require('./routes/savename').route
 const clearroute=require('./routes/clearall').route
+const addpay=require('./routes/addpay').route
 
+
+app.use('/addpay',addpay);
 app.use('/clearall',clearroute);
 app.use('/friends',friendsroute);
 app.use('/savename',savename);

@@ -8,6 +8,7 @@ route.post('/',(req,res)=>{
     if(req.body.exampleRadios=="option1"){
 
         table.create({
+
             name:req.body.name,
             email:req.body.email,
             moneytogive:req.body.money
