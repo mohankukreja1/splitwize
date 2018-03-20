@@ -6,68 +6,63 @@ var moneytake;
 var mainname;
 
 route.post('/',(req,res)=>{
-    if(req.body.exampleRadios =="option1"){
-        var temp=req.body.money;
+    if(req.body.exampleRadios =="option1") {
+        var temp = req.body.money;
         console.log(temp);
-        table.findById(1).then((result)=>{
-            if(result.dataValues.moneytogive == null){
+        table.findById(1).then((result) => {
+            if (result.dataValues.moneytogive == null) {
 
                 moneytake = result.dataValues.moneytotake + Number(temp);
                 console.log(moneytake);
 
             }
-            if(result.dataValues.moneytotake == null){
-                if(result.dataValues.moneytogive > Number(temp)){
-                    moneygive =result.dataValues.moneytogive  - Number(temp)
+            if (result.dataValues.moneytotake == null) {
+                if (result.dataValues.moneytogive > Number(temp)) {
+                    moneygive = result.dataValues.moneytogive - Number(temp)
                     console.log(moneygive);
                 }
-                else{
-                    moneytake = Number(temp) -result.dataValues.moneytogive;
+                else {
+                    moneytake = Number(temp) - result.dataValues.moneytogive;
                     moneygive = 0;
                 }
             }
 
 
-
-
-
-
             table.update(
                 {
-                    moneytogive:moneygive,
-                    moneytotake:moneytake
+                    moneytogive: moneygive,
+                    moneytotake: moneytake
                 },
-                { where: { id: 1 } }
-            ).then((result)=>{
+                {where: {id: 1}}
+            ).then((result) => {
 
-                table2.findAll({}).then((result)=>{
-                    mainname=result[0].dataValues.name
+                table2.findAll({}).then((result) => {
+                    mainname = result[0].dataValues.name
 
                 })
-                    .catch((err)=>{
+                    .catch((err) => {
                         console.log(err);
                     })
 
-                table.findAll({}).then((result)=>{
+                table.findAll({}).then((result) => {
                     console.log(result);
-                    res.render('friends',{
-                        mainname:mainname,
-                        obj:result[0].dataValues,
+                    res.render('friends', {
+                        mainname: mainname,
+                        obj: result[0].dataValues,
 
                     })
-                }).catch((err)=>{
+                }).catch((err) => {
                     console.log(err);
                 })
 
-            }).catch((err)=>{
+            }).catch((err) => {
                 console.log(err);
             })
 
         })
-            .catch((err)=>{
+            .catch((err) => {
                 console.log(err);
             })
-
 
 
     }
