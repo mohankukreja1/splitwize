@@ -6,13 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d73ac31-b5b0-4b2a-b51a-1d8cd493af62" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/routes/addpay.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/addpayform.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/routes/handle.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public_static/friends.html" afterPath="$PROJECT_DIR$/public_static/friends.html" />
-      <change beforePath="$PROJECT_DIR$/routes/friends.js" afterPath="$PROJECT_DIR$/routes/friends.js" />
       <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change beforePath="$PROJECT_DIR$/views/friends.hbs" afterPath="$PROJECT_DIR$/views/friends.hbs" />
+      <change beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
+      <change beforePath="$PROJECT_DIR$/views/addpayform.hbs" afterPath="$PROJECT_DIR$/views/addpayform.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -49,8 +47,8 @@
       <file leaf-file-name="friends.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/friends.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="108" column="22" lean-forward="false" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+            <state relative-caret-position="-1333">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -102,50 +100,31 @@
       <file leaf-file-name="addpayform.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/addpayform.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="392">
+              <caret line="41" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="handle.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/handle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="221">
+              <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#576#582#0" expanded="true" />
-                <element signature="e#582#588#0" expanded="true" />
-                <element signature="e#588#594#0" expanded="true" />
-                <element signature="e#594#600#0" expanded="true" />
-                <element signature="e#600#606#0" expanded="true" />
-                <element signature="e#606#612#0" expanded="true" />
-                <element signature="e#612#618#0" expanded="true" />
-                <element signature="e#618#624#0" expanded="true" />
-                <element signature="e#624#630#0" expanded="true" />
-                <element signature="e#630#636#0" expanded="true" />
-                <element signature="e#636#642#0" expanded="true" />
-                <element signature="e#642#648#0" expanded="true" />
-                <element signature="e#648#654#0" expanded="true" />
-                <element signature="e#654#660#0" expanded="true" />
-                <element signature="e#660#666#0" expanded="true" />
-                <element signature="e#666#672#0" expanded="true" />
-                <element signature="e#672#678#0" expanded="true" />
-                <element signature="e#678#684#0" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#center#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="savename.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/savename.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -163,8 +142,8 @@
       <file leaf-file-name="friends.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/friends.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="332">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -173,8 +152,8 @@
       <file leaf-file-name="friends.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_static/friends.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="332">
+              <caret line="60" column="11" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="60" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -206,8 +185,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -221,7 +200,6 @@
         <option value="$PROJECT_DIR$/routes/savename.js" />
         <option value="$PROJECT_DIR$/views/friends.html" />
         <option value="$PROJECT_DIR$/public_static/index.html" />
-        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/routes/clearall.js" />
         <option value="$PROJECT_DIR$/routes/friends.js" />
         <option value="$PROJECT_DIR$/db/model.js" />
@@ -230,7 +208,9 @@
         <option value="$PROJECT_DIR$/views/addpayform.html" />
         <option value="$PROJECT_DIR$/routes/addpay.js" />
         <option value="$PROJECT_DIR$/views/addpayform.hbs" />
+        <option value="$PROJECT_DIR$/routes/handle.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/test.html" />
       </list>
     </option>
   </component>
@@ -457,12 +437,12 @@
       <workItem from="1521203330374" duration="1182000" />
       <workItem from="1521265187808" duration="6186000" />
       <workItem from="1521273321335" duration="1315000" />
-      <workItem from="1521274677020" duration="19353000" />
+      <workItem from="1521274677020" duration="20607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28036000" />
+    <option name="totallyTimeSpent" value="29290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="799" extended-state="0" />
@@ -503,8 +483,14 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/handle.js</url>
+          <line>5</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -832,43 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#576#582#0" expanded="true" />
-            <element signature="e#582#588#0" expanded="true" />
-            <element signature="e#588#594#0" expanded="true" />
-            <element signature="e#594#600#0" expanded="true" />
-            <element signature="e#600#606#0" expanded="true" />
-            <element signature="e#606#612#0" expanded="true" />
-            <element signature="e#612#618#0" expanded="true" />
-            <element signature="e#618#624#0" expanded="true" />
-            <element signature="e#624#630#0" expanded="true" />
-            <element signature="e#630#636#0" expanded="true" />
-            <element signature="e#636#642#0" expanded="true" />
-            <element signature="e#642#648#0" expanded="true" />
-            <element signature="e#648#654#0" expanded="true" />
-            <element signature="e#654#660#0" expanded="true" />
-            <element signature="e#660#666#0" expanded="true" />
-            <element signature="e#666#672#0" expanded="true" />
-            <element signature="e#672#678#0" expanded="true" />
-            <element signature="e#678#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/friends.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -877,39 +826,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_static/friends.html">
+    <entry file="file://$PROJECT_DIR$/routes/clearall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#987#993#0" expanded="true" />
-            <element signature="e#993#999#0" expanded="true" />
-            <element signature="e#999#1005#0" expanded="true" />
-            <element signature="e#1005#1011#0" expanded="true" />
-            <element signature="e#1011#1017#0" expanded="true" />
-            <element signature="e#1017#1023#0" expanded="true" />
-            <element signature="e#1023#1029#0" expanded="true" />
-            <element signature="e#1029#1035#0" expanded="true" />
-            <element signature="e#1035#1041#0" expanded="true" />
-            <element signature="e#1041#1047#0" expanded="true" />
-            <element signature="e#1047#1053#0" expanded="true" />
-            <element signature="e#1053#1059#0" expanded="true" />
-            <element signature="e#1059#1065#0" expanded="true" />
-            <element signature="e#1065#1071#0" expanded="true" />
-            <element signature="e#1071#1077#0" expanded="true" />
-            <element signature="e#1077#1083#0" expanded="true" />
-            <element signature="e#1083#1089#0" expanded="true" />
-            <element signature="e#1089#1095#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="645">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/addpay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/friends.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="108" column="22" lean-forward="false" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+        <state relative-caret-position="-1333">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -947,26 +883,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/clearall.js">
+    <entry file="file://$PROJECT_DIR$/public_static/friends.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="332">
+          <caret line="60" column="11" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="60" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#987#993#0" expanded="true" />
+            <element signature="e#993#999#0" expanded="true" />
+            <element signature="e#999#1005#0" expanded="true" />
+            <element signature="e#1005#1011#0" expanded="true" />
+            <element signature="e#1011#1017#0" expanded="true" />
+            <element signature="e#1017#1023#0" expanded="true" />
+            <element signature="e#1023#1029#0" expanded="true" />
+            <element signature="e#1029#1035#0" expanded="true" />
+            <element signature="e#1035#1041#0" expanded="true" />
+            <element signature="e#1041#1047#0" expanded="true" />
+            <element signature="e#1047#1053#0" expanded="true" />
+            <element signature="e#1053#1059#0" expanded="true" />
+            <element signature="e#1059#1065#0" expanded="true" />
+            <element signature="e#1065#1071#0" expanded="true" />
+            <element signature="e#1071#1077#0" expanded="true" />
+            <element signature="e#1077#1083#0" expanded="true" />
+            <element signature="e#1083#1089#0" expanded="true" />
+            <element signature="e#1089#1095#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/friends.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/addpay.js">
+    <entry file="file://$PROJECT_DIR$/routes/handle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/addpayform.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="75">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -976,6 +933,24 @@
         <state relative-caret-position="270">
           <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/addpayform.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="41" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#center#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

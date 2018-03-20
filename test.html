@@ -2,26 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Friends</title>
+    <title>Add To Payment</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 
 </head>
+<center><h1 style="color:blue;">ADD TO PAYMENT</h1></center>
 <body>
-<div class="container">
-<div class="row" style="background-color:cyan">
+<form action="/handle" method="post" style="padding:50px; background-color: yellow">
+    <fieldset>
+        <label>Money Settlement</label>
 
-    <h1 style="font-family: AppleMyungjo ;margin: auto; color: blue;" >Friends</h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="friends.png" alt="not found">
 
+    <div class="form-group">
+        <label>Money</label>
+        <input name="money" type="number" class="form-control" id="Money" aria-describedby="emailHelp" placeholder="Enter Money">
 
-</div>
-</div>
-
-<hr>
-<hr>
-<br>
-<br>
-<br>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+            <i class="fas fa-arrow-alt-circle-right"></i> To Be Paid By You
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+            <i class="fas fa-arrow-circle-left"></i> To Be Given To You
+        </label>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+</form>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

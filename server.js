@@ -14,8 +14,9 @@ const friendsroute=require('./routes/friends').route
 const savename=require('./routes/savename').route
 const clearroute=require('./routes/clearall').route
 const addpay=require('./routes/addpay').route
+const handle=require('./routes/handle').route
 
-
+app.use('/handle',handle);
 app.use('/addpay',addpay);
 app.use('/clearall',clearroute);
 app.use('/friends',friendsroute);
