@@ -16,15 +16,16 @@ route.post('/',(req,res)=>{
                 console.log(moneytake);
 
             }
-            // if(result.dataValues.moneytogive == null){
-            //     if(result.dataValues.moneytotake > Number(temp)){
-            //         moneytake =result.dataValues.moneytotake  - Number(temp)
-            //         console.log(moneytake);
-            //     }
-            //     else{
-            //         moneytogive =Number(temp) -result.dataValues.moneytotake;
-            //     }
-            // }
+            if(result.dataValues.moneytotake == null){
+                if(result.dataValues.moneytogive > Number(temp)){
+                    moneygive =result.dataValues.moneytogive  - Number(temp)
+                    console.log(moneygive);
+                }
+                else{
+                    moneytake = Number(temp) -result.dataValues.moneytogive;
+                    moneygive = 0;
+                }
+            }
 
 
 
