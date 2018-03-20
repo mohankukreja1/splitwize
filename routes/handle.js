@@ -10,21 +10,21 @@ route.post('/',(req,res)=>{
         var temp=req.body.money;
         console.log(temp);
         table.findById(1).then((result)=>{
-            if(result.dataValues.moneytotake == null){
-
-                moneygive = result.dataValues.moneytogive + Number(temp);
-                console.log(moneygive);
-
-            }
             if(result.dataValues.moneytogive == null){
-                if(result.dataValues.moneytotake > Number(temp)){
-                    moneytake =result.dataValues.moneytotake  - Number(temp)
-                    console.log(moneytake);
-                }
-                else{
-                    moneytogive =Number(temp) -result.dataValues.moneytotake;
-                }
+
+                moneytake = result.dataValues.moneytotake + Number(temp);
+                console.log(moneytake);
+
             }
+            // if(result.dataValues.moneytogive == null){
+            //     if(result.dataValues.moneytotake > Number(temp)){
+            //         moneytake =result.dataValues.moneytotake  - Number(temp)
+            //         console.log(moneytake);
+            //     }
+            //     else{
+            //         moneytogive =Number(temp) -result.dataValues.moneytotake;
+            //     }
+            // }
 
 
 
@@ -48,7 +48,7 @@ route.post('/',(req,res)=>{
                     })
 
                 table.findAll({}).then((result)=>{
-
+                    console.log(result);
                     res.render('friends',{
                         mainname:mainname,
                         obj:result[0].dataValues,
