@@ -10,6 +10,16 @@ const savename=db.define('savename',{
     name:datatypes.STRING
 })
 
+const grptable=db.define('grptable',{
+    id:{
+        type: datatypes.INTEGER,
+        primaryKey: true,
+
+    },
+    name: datatypes.STRING,
+    email:datatypes.STRING
+})
+
 
 const table=db.define('splittable',{
     id: {
@@ -29,5 +39,5 @@ db.sync({force: true})
     .catch((err) => console.error(err));
 
 module.exports={
-    table,savename
+    table,savename,grptable
 }
