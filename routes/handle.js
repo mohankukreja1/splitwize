@@ -66,6 +66,67 @@ route.post('/',(req,res)=>{
 
 
     }
+    if(req.body.exampleRadios =="option2"){
+        var temp = req.body.money;
+        console.log(temp);
+        table.findById(1).then((result) => {
+            if (result.dataValues.moneytotake == null) {
+
+                moneygive = result.dataValues.moneytogive + Number(temp);
+                console.log(moneygive);
+
+            }
+            if (result.dataValues.moneytogive == null) {
+                if (result.dataValues.moneytotake > Number(temp)) {
+                    moneytake = result.dataValues.moneytotake - Number(temp)
+                    console.log(moneytake);
+                }
+                else {
+                    moneygive = Number(temp) - result.dataValues.moneytotake;
+                    moneytake = 0;
+                }
+            }
+
+        console.log(moneygive);
+            console.log(moneytake);
+            table.update(
+                {
+                    moneytogive: moneygive,
+                    moneytotake: moneytake
+                },
+                {where: {id: 1}}
+            ).then((result) => {
+
+                table2.findAll({}).then((result) => {
+                    mainname = result[0].dataValues.name
+
+                })
+                    .catch((err) => {
+                        console.log(err);
+                    })
+
+                table.findAll({}).then((result) => {
+
+                    console.log(result);
+                    res.render('friends', {
+                        mainname: mainname,
+                        obj: result[0].dataValues,
+
+                    })
+                }).catch((err) => {
+                    console.log(err);
+                })
+
+            }).catch((err) => {
+                console.log(err);
+            })
+
+        })
+            .catch((err) => {
+                console.log(err);
+            })
+
+    }
 })
 
 
