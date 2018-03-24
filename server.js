@@ -16,7 +16,11 @@ const clearroute=require('./routes/clearall').route
 const addpay=require('./routes/addpay').route
 const handle=require('./routes/handle').route
 const group=require('./routes/group').route
+const addgrp=require('./routes/addgrp').route
 
+
+
+app.use('/addgrp',addgrp);
 app.use('/group',group);
 app.use('/handle',handle);
 app.use('/addpay',addpay);

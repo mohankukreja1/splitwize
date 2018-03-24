@@ -17,7 +17,9 @@ const grptable=db.define('grptable',{
 
     },
     name: datatypes.STRING,
-    email:datatypes.STRING
+    email:datatypes.STRING,
+    moneytogive:datatypes.INTEGER,
+    moneytotake:datatypes.INTEGER
 })
 
 
