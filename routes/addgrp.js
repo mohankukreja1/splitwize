@@ -498,6 +498,78 @@ route.post('/',(req,res)=>{
 
     }
 
+    if(req.body.exampleRadios4 == "option4"){
+
+        if(req.body.number=='4'){
+
+
+            money = Number(req.body.money);
+            var divide=Number(req.body.number);
+            money=money/divide;
+            console.log(money);
+            table.update(
+                {
+                    moneytogive:money,
+                    moneytotake:0
+                },
+                { where: { id: 1 } }
+            ).then((res)=>{
+
+                table.update(
+                    {
+                        moneytogive:money,
+                        moneytotake:0
+                    },
+                    { where: { id: 2 } }
+                ).then((res)=>{
+                    table.update(
+                        {
+                            moneytogive:money,
+                            moneytotake:0
+                        },
+                        { where: { id: 3 } }
+                    ).then((res)=>{
+                        table.update(
+                            {
+                                moneytogive:0,
+                                moneytotake:money
+                            },
+                            { where: { id: 4 } }
+                        ).then((res)=>{
+                            table.findAll({}).then((res)=>{
+                                console.log(res);
+                            })
+                                .catch((err)=>{
+                                    console.log(err);
+                                })
+
+
+
+                        }).catch((err)=>{
+                            console.log(err);
+                        })
+
+
+                    }).catch((err)=>{
+                        console.log(err);
+                    })
+
+
+                }).catch((err)=>{
+                    console.log(err);
+                })
+
+
+            }).catch((err)=>{
+                console.log(err);
+            })
+
+        }
+
+
+    }
+
+
 
 })
 
