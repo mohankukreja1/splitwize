@@ -55,6 +55,169 @@ route.post('/',(req,res)=>{
                     },
                     { where: { id: 2 } }
                 ).then((res)=>{
+                    console.log(req);
+
+
+                }).catch((err)=>{
+                    console.log(err);
+                })
+
+
+            }).catch((err)=>{
+                console.log(err);
+            })
+
+
+
+        }
+
+
+        if(req.body.number=='3'){
+
+
+            money = Number(req.body.money);
+            var divide=Number(req.body.number);
+            money=money/divide;
+            console.log(money);
+            table.update(
+                {
+                    moneytogive:0,
+                    moneytotake:money
+                },
+                { where: { id: 1 } }
+            ).then((res)=>{
+
+                table.update(
+                    {
+                        moneytogive:money,
+                        moneytotake:0
+                    },
+                    { where: { id: 2 } }
+                ).then((res)=>{
+                    table.update(
+                        {
+                            moneytogive:money,
+                            moneytotake:0
+                        },
+                        { where: { id: 3 } }
+                    ).then((res)=>{
+                        table.findAll({}).then((res)=>{
+                            console.log(res);
+                        })
+                            .catch((err)=>{
+                                console.log(err);
+                            })
+
+
+                    }).catch((err)=>{
+                        console.log(err);
+                    })
+
+
+                }).catch((err)=>{
+                    console.log(err);
+                })
+
+
+            }).catch((err)=>{
+                console.log(err);
+            })
+
+        }
+
+        if(req.body.number=='4'){
+
+
+            money = Number(req.body.money);
+            var divide=Number(req.body.number);
+            money=money/divide;
+            console.log(money);
+            table.update(
+                {
+                    moneytogive:0,
+                    moneytotake:money
+                },
+                { where: { id: 1 } }
+            ).then((res)=>{
+
+                table.update(
+                    {
+                        moneytogive:money,
+                        moneytotake:0
+                    },
+                    { where: { id: 2 } }
+                ).then((res)=>{
+                    table.update(
+                        {
+                            moneytogive:money,
+                            moneytotake:0
+                        },
+                        { where: { id: 3 } }
+                    ).then((res)=>{
+                        table.update(
+                            {
+                                moneytogive:money,
+                                moneytotake:0
+                            },
+                            { where: { id: 4 } }
+                        ).then((res)=>{
+                            table.findAll({}).then((res)=>{
+                                console.log(res);
+                            })
+                                .catch((err)=>{
+                                    console.log(err);
+                                })
+
+
+
+                        }).catch((err)=>{
+                            console.log(err);
+                        })
+
+
+                    }).catch((err)=>{
+                        console.log(err);
+                    })
+
+
+                }).catch((err)=>{
+                    console.log(err);
+                })
+
+
+            }).catch((err)=>{
+                console.log(err);
+            })
+
+        }
+
+
+
+
+
+    }
+    if(req.body.exampleRadios2 == "option2"){
+        if(req.body.number=='2'){
+
+            money = Number(req.body.money);
+            var divide=Number(req.body.number);
+            money=money/divide;
+            console.log(money);
+            table.update(
+                {
+                    moneytogive:money,
+                    moneytotake:0
+                },
+                { where: { id: 1 } }
+            ).then((res)=>{
+
+                table.update(
+                    {
+                        moneytogive:0,
+                        moneytotake:money
+                    },
+                    { where: { id: 2 } }
+                ).then((res)=>{
                     table.findAll({}).then((res)=>{
                         console.log(res);
                     })
@@ -76,22 +239,13 @@ route.post('/',(req,res)=>{
 
         }
 
+        if(req.body.number=='3'){
 
 
-
-    }
-    if(req.body.exampleRadios2 == "option2"){
-        money = Number(req.body.money);
-        var divide=Number(req.body.number);
-        money=money/divide;
-        table.update(
-            {
-                moneytogive:0,
-                moneytotake:money
-            },
-            { where: { id: 2 } }
-        ).then((res)=>{
-
+            money = Number(req.body.money);
+            var divide=Number(req.body.number);
+            money=money/divide;
+            console.log(money);
             table.update(
                 {
                     moneytogive:money,
@@ -99,25 +253,115 @@ route.post('/',(req,res)=>{
                 },
                 { where: { id: 1 } }
             ).then((res)=>{
-                table.findAll({}).then((res)=>{
-                    console.log(res);
-                })
-                    .catch((err)=>{
+
+                table.update(
+                    {
+                        moneytogive:0,
+                        moneytotake:money
+                    },
+                    { where: { id: 2 } }
+                ).then((res)=>{
+                    table.update(
+                        {
+                            moneytogive:money,
+                            moneytotake:0
+                        },
+                        { where: { id: 3 } }
+                    ).then((res)=>{
+                        table.findAll({}).then((res)=>{
+                            console.log(res);
+                        })
+                            .catch((err)=>{
+                                console.log(err);
+                            })
+
+
+                    }).catch((err)=>{
                         console.log(err);
                     })
+
+
+                }).catch((err)=>{
+                    console.log(err);
+                })
+
 
             }).catch((err)=>{
                 console.log(err);
             })
 
+        }
+
+
+        if(req.body.number=='4'){
+
+
+            money = Number(req.body.money);
+            var divide=Number(req.body.number);
+            money=money/divide;
+            console.log(money);
+            table.update(
+                {
+                    moneytogive:money,
+                    moneytotake:0
+                },
+                { where: { id: 1 } }
+            ).then((res)=>{
+
+                table.update(
+                    {
+                        moneytogive:0,
+                        moneytotake:money
+                    },
+                    { where: { id: 2 } }
+                ).then((res)=>{
+                    table.update(
+                        {
+                            moneytogive:money,
+                            moneytotake:0
+                        },
+                        { where: { id: 3 } }
+                    ).then((res)=>{
+                        table.update(
+                            {
+                                moneytogive:money,
+                                moneytotake:0
+                            },
+                            { where: { id: 4 } }
+                        ).then((res)=>{
+                            table.findAll({}).then((res)=>{
+                                console.log(res);
+                            })
+                                .catch((err)=>{
+                                    console.log(err);
+                                })
+
+
+
+                        }).catch((err)=>{
+                            console.log(err);
+                        })
+
+
+                    }).catch((err)=>{
+                        console.log(err);
+                    })
+
+
+                }).catch((err)=>{
+                    console.log(err);
+                })
+
+
+            }).catch((err)=>{
+                console.log(err);
+            })
+
+        }
 
 
 
 
-
-        }).catch((err)=>{
-            console.log(err);
-        })
     }
 
 
