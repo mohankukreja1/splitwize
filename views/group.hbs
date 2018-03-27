@@ -12,6 +12,7 @@
 
 
 </head>
+{{#if four}}
 
 <body>
 <div class="container">
@@ -28,7 +29,7 @@
 <hr>
 <hr>
 <div class="container">
-    {{#if arr3.name}}
+
 
         <div class="row">
             <div class="col-6">
@@ -132,18 +133,278 @@
                 </div>
             </div>
         </div>
-    {{/if}}
 
-
-
-
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </div>
+        </body>
+        </html>
+{{/if}}
+{{#if three}}
+    <body>
+    <div class="container">
+        <div class="row" style="background-color:cyan">
+
+            <h1 style="font-family: AppleMyungjo ;margin: auto; color: blue;" >Group</h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="group.png" alt="not found">
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-6">
+                <div class="card" style="width: 18rem;">
+                    {{#if arr.moneytogive}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr.name}}</h5>
+                            <p class="card-text">Has to give {{arr.moneytogive}}</p>
+
+                        </div>
+                    {{else}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-left"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr.name}}</h5>
+                            <p class="card-text">Has to take {{arr.moneytotake}}</p>
+
+                        </div>
+
+                    {{/if}}
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-6">
+                <div class="card" style="width: 18rem;">
+                    {{#if arr1.moneytogive}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr1.name}}</h5>
+                            <p class="card-text">Has to give {{arr1.moneytogive}}</p>
+
+                        </div>
+                    {{else}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-left"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr1.name}}</h5>
+                            <p class="card-text">Has to take {{arr1.moneytotake}}</p>
+
+                        </div>
+
+                    {{/if}}
+
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="card" style="width: 18rem;">
+                    {{#if arr2.moneytogive}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr2.name}}</h5>
+                            <p class="card-text">Has to give {{arr2.moneytogive}}</p>
+
+                        </div>
+                    {{else}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-left"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr2.name}}</h5>
+                            <p class="card-text">Has to take {{arr2.moneytotake}}</p>
+
+                        </div>
+
+                    {{/if}}
+
+                </div>
+            </div>
+        </div>
 
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
 
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+
+{{/if}}
+
+{{#if two}}
+
+
+    <body>
+    <div class="container">
+        <div class="row" style="background-color:cyan">
+
+            <h1 style="font-family: AppleMyungjo ;margin: auto; color: blue;" >Group</h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="group.png" alt="not found">
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-6">
+                <div class="card" style="width: 18rem;">
+                    {{#if arr.moneytogive}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr.name}}</h5>
+                            <p class="card-text">Has to give {{arr.moneytogive}}</p>
+
+                        </div>
+                    {{else}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-left"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr.name}}</h5>
+                            <p class="card-text">Has to take {{arr.moneytotake}}</p>
+
+                        </div>
+
+                    {{/if}}
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-6">
+                <div class="card" style="width: 18rem;">
+                    {{#if arr1.moneytogive}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr1.name}}</h5>
+                            <p class="card-text">Has to give {{arr1.moneytogive}}</p>
+
+                        </div>
+                    {{else}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-left"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr1.name}}</h5>
+                            <p class="card-text">Has to take {{arr1.moneytotake}}</p>
+
+                        </div>
+
+                    {{/if}}
+
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+
+
+
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+    </html>
+{{/if}}
+
+{{#if one}}
+    <body>
+    <div class="container">
+        <div class="row" style="background-color:cyan">
+
+            <h1 style="font-family: AppleMyungjo ;margin: auto; color: blue;" >Group</h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="group.png" alt="not found">
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-6">
+                <div class="card" style="width: 18rem;">
+                    {{#if arr.moneytogive}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr.name}}</h5>
+                            <p class="card-text">Has to give {{arr.moneytogive}}</p>
+
+                        </div>
+                    {{else}}
+                        <i style="width: 200px; height: 200px;"class="fas fa-arrow-alt-circle-left"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">{{arr.name}}</h5>
+                            <p class="card-text">Has to take {{arr.moneytotake}}</p>
+
+                        </div>
+
+                    {{/if}}
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+
+
+
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+{{/if}}
+
+
 </html>
+
+
+
+
+
+
+
+

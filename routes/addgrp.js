@@ -20,7 +20,7 @@ route.post('/',(req,res1)=>{
             ).then((res)=>{
                 table.findAll({}).then((res)=>{
                     res1.render('group',{
-                        number:1,
+                        one:1,
                         arr:res[0].dataValues
                     })
                 })
@@ -61,7 +61,7 @@ route.post('/',(req,res1)=>{
                     table.findAll({}).then((res)=>{
                         console.log(res);
                         res1.render('group',{
-                            number:2,
+                            two:2,
                             arr:res[0].dataValues,
                             arr1:res[1].dataValues
                         })
@@ -116,7 +116,7 @@ route.post('/',(req,res1)=>{
                     ).then((res)=>{
                         table.findAll({}).then((res)=>{
                             res1.render('group',{
-                                number:3,
+                                three:3,
                                 arr:res[0].dataValues,
                                 arr1:res[1].dataValues,
                                 arr2:res[2].dataValues
@@ -183,7 +183,7 @@ route.post('/',(req,res1)=>{
                         ).then((res)=>{
                             table.findAll({}).then((res)=>{
                                 res1.render('group',{
-                                    number:4,
+                                    four:4,
                                     arr:res[0].dataValues,
                                     arr1:res[1].dataValues,
                                     arr2:res[2].dataValues,
@@ -247,7 +247,7 @@ route.post('/',(req,res1)=>{
                     table.findAll({}).then((res)=>{
                         console.log(res);
                         res1.render('group',{
-                            number:2,
+                            two:2,
                             arr:res[0].dataValues,
                             arr1:res[1].dataValues
                         })
@@ -302,7 +302,7 @@ route.post('/',(req,res1)=>{
                         table.findAll({}).then((res)=>{
                             console.log(res);
                             res1.render('group',{
-                                number:3,
+                                three:3,
                                 arr:res[0].dataValues,
                                 arr1:res[1].dataValues,
                                 arr2:res[3].dataValues
@@ -369,7 +369,7 @@ route.post('/',(req,res1)=>{
                             table.findAll({}).then((res)=>{
                                 console.log(res);
                                 res1.render('group',{
-                                    number:4,
+                                    four:4,
                                     arr:res[0].dataValues,
                                     arr1:res[1].dataValues,
                                     arr2:res[2].dataValues,
@@ -445,7 +445,7 @@ route.post('/',(req,res1)=>{
                             table.findAll({}).then((res)=>{
                                 console.log(res);
                                 res1.render('group',{
-                                    number:3,
+                                    three:3,
                                     arr:res[0].dataValues,
                                     arr1:res[1].dataValues,
                                     arr2:res[2].dataValues
@@ -512,7 +512,7 @@ route.post('/',(req,res1)=>{
                                 table.findAll({}).then((res)=>{
                                     console.log(res);
                                     res1.render('group',{
-                                        number:4,
+                                        four:4,
                                         arr:res[0].dataValues,
                                         arr1:res[1].dataValues,
                                         arr2:res[2].dataValues,
@@ -595,7 +595,7 @@ route.post('/',(req,res1)=>{
                             table.findAll({}).then((res)=>{
                                 console.log(res);
                                 res1.render('group',{
-                                    number:4,
+                                    four:4,
                                     arr:res[0].dataValues,
                                     arr1:res[1].dataValues,
                                     arr2:res[2].dataValues,
