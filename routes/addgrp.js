@@ -2,7 +2,7 @@ const route = require('express').Router();
 const table=require('../db/model').grptable;
 
 var money;
-route.post('/',(req,res)=>{
+route.post('/',(req,res1)=>{
     console.log(req);
 
     if(req.body.exampleRadios1 == 'option1'){
@@ -19,7 +19,9 @@ route.post('/',(req,res)=>{
                 { where: { id: 1 } }
             ).then((res)=>{
                 table.findAll({}).then((res)=>{
-                    console.log(res);
+                    res1.render('group',{
+                        arr:res[0].dataValues
+                    })
                 })
                     .catch((err)=>{
                         console.log(err);
@@ -54,8 +56,17 @@ route.post('/',(req,res)=>{
                         moneytotake:0
                     },
                     { where: { id: 2 } }
-                ).then((res)=>{
-                    console.log(req);
+                ).then((result)=>{
+                    table.findAll({}).then((res)=>{
+                        console.log(res);
+                        res1.render('group',{
+                            arr:res[0].dataValues,
+                            arr1:res[1].dataValues
+                        })
+                    })
+                        .catch((err)=>{
+                            console.log(err);
+                        })
 
 
                 }).catch((err)=>{
@@ -102,7 +113,13 @@ route.post('/',(req,res)=>{
                         { where: { id: 3 } }
                     ).then((res)=>{
                         table.findAll({}).then((res)=>{
-                            console.log(res);
+                            res1.render('group',{
+                                arr:res[0].dataValues,
+                                arr1:res[1].dataValues,
+                                arr2:res[2].dataValues
+
+
+                            })
                         })
                             .catch((err)=>{
                                 console.log(err);
@@ -162,7 +179,12 @@ route.post('/',(req,res)=>{
                             { where: { id: 4 } }
                         ).then((res)=>{
                             table.findAll({}).then((res)=>{
-                                console.log(res);
+                                res1.render('group',{
+                                    arr:res[0].dataValues,
+                                    arr1:res[1].dataValues,
+                                    arr2:res[2].dataValues,
+                                    arr3:res[3].dataValues
+                                                                        })
                             })
                                 .catch((err)=>{
                                     console.log(err);
@@ -220,6 +242,10 @@ route.post('/',(req,res)=>{
                 ).then((res)=>{
                     table.findAll({}).then((res)=>{
                         console.log(res);
+                        res1.render('group',{
+                            arr:res[0].dataValues,
+                            arr1:res[1].dataValues
+                        })
                     })
                         .catch((err)=>{
                             console.log(err);
@@ -270,6 +296,11 @@ route.post('/',(req,res)=>{
                     ).then((res)=>{
                         table.findAll({}).then((res)=>{
                             console.log(res);
+                            res1.render('group',{
+                                arr:res[0].dataValues,
+                                arr1:res[1].dataValues,
+                                arr2:res[3].dataValues
+                            })
                         })
                             .catch((err)=>{
                                 console.log(err);
@@ -331,6 +362,12 @@ route.post('/',(req,res)=>{
                         ).then((res)=>{
                             table.findAll({}).then((res)=>{
                                 console.log(res);
+                                res1.render('group',{
+                                    arr:res[0].dataValues,
+                                    arr1:res[1].dataValues,
+                                    arr2:res[2].dataValues,
+                                    arr3:res[3].dataValues
+                                })
                             })
                                 .catch((err)=>{
                                     console.log(err);
@@ -400,6 +437,11 @@ route.post('/',(req,res)=>{
                         ).then((res)=>{
                             table.findAll({}).then((res)=>{
                                 console.log(res);
+                                res1.render('group',{
+                                    arr:res[0].dataValues,
+                                    arr1:res[1].dataValues,
+                                    arr2:res[2].dataValues
+                                })
                             })
                                 .catch((err)=>{
                                     console.log(err);
@@ -461,11 +503,16 @@ route.post('/',(req,res)=>{
                             ).then((res)=>{
                                 table.findAll({}).then((res)=>{
                                     console.log(res);
+                                    res1.render('group',{
+                                        arr:res[0].dataValues,
+                                        arr1:res[1].dataValues,
+                                        arr2:res[2].dataValues,
+                                        arr3:res[3].dataValues
+                                    })
                                 })
                                     .catch((err)=>{
                                         console.log(err);
                                     })
-
 
 
                             }).catch((err)=>{
@@ -538,6 +585,12 @@ route.post('/',(req,res)=>{
                         ).then((res)=>{
                             table.findAll({}).then((res)=>{
                                 console.log(res);
+                                res1.render('group',{
+                                    arr:res[0].dataValues,
+                                    arr1:res[1].dataValues,
+                                    arr2:res[2].dataValues,
+                                    arr3:res[3].dataValues
+                                })
                             })
                                 .catch((err)=>{
                                     console.log(err);

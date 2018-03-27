@@ -6,6 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d73ac31-b5b0-4b2a-b51a-1d8cd493af62" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/group.hbs" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/routes/addgrp.js" afterPath="$PROJECT_DIR$/routes/addgrp.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,16 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_static/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="40" lean-forward="false" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,7 +35,7 @@
       <file leaf-file-name="group.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_static/group.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="15">
               <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="41" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -125,8 +117,18 @@
       <file leaf-file-name="addgrp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/addgrp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="501" column="8" lean-forward="false" selection-start-line="501" selection-start-column="8" selection-end-line="501" selection-end-column="8" />
+            <state relative-caret-position="-279">
+              <caret line="589" column="59" lean-forward="false" selection-start-line="589" selection-start-column="59" selection-end-line="589" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="group.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/group.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -155,7 +157,7 @@
       <file leaf-file-name="group.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/group.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="-5">
               <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding />
             </state>
@@ -167,8 +169,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -196,6 +198,9 @@
         <option value="$PROJECT_DIR$/public_static/group.html" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public_static/amount.html" />
+        <option value="$PROJECT_DIR$/routes/group.hbs.html" />
+        <option value="$PROJECT_DIR$/routes/group.hbs" />
+        <option value="$PROJECT_DIR$/views/group.hbs" />
         <option value="$PROJECT_DIR$/routes/addgrp.js" />
       </list>
     </option>
@@ -339,7 +344,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -372,6 +376,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,11 +390,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/public_static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public_static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -426,12 +432,13 @@
       <workItem from="1521274677020" duration="30167000" />
       <workItem from="1521867697009" duration="6243000" />
       <workItem from="1521889218419" duration="4204000" />
-      <workItem from="1521955279645" duration="7231000" />
+      <workItem from="1521955279645" duration="7931000" />
+      <workItem from="1522123578589" duration="2436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56528000" />
+    <option name="totallyTimeSpent" value="59664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="799" extended-state="0" />
@@ -442,10 +449,10 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -473,54 +480,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/addgrp.js</url>
-          <line>104</line>
+          <line>60</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/addgrp.js</url>
-          <line>221</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/addgrp.js</url>
-          <line>271</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/addgrp.js</url>
-          <line>332</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/addgrp.js</url>
-          <line>401</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/addgrp.js</url>
-          <line>462</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="65" />
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="66" />
+      <option name="time" value="67" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/group.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/friends.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -905,14 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/group.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_static/friends.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-283">
@@ -942,47 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_static/group.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="41" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#984#990#0" expanded="true" />
-            <element signature="e#990#996#0" expanded="true" />
-            <element signature="e#996#1002#0" expanded="true" />
-            <element signature="e#1002#1008#0" expanded="true" />
-            <element signature="e#1008#1014#0" expanded="true" />
-            <element signature="e#1014#1020#0" expanded="true" />
-            <element signature="e#1020#1026#0" expanded="true" />
-            <element signature="e#1026#1032#0" expanded="true" />
-            <element signature="e#1032#1038#0" expanded="true" />
-            <element signature="e#1038#1044#0" expanded="true" />
-            <element signature="e#1044#1050#0" expanded="true" />
-            <element signature="e#1050#1056#0" expanded="true" />
-            <element signature="e#1056#1062#0" expanded="true" />
-            <element signature="e#1062#1068#0" expanded="true" />
-            <element signature="e#1068#1074#0" expanded="true" />
-            <element signature="e#1074#1080#0" expanded="true" />
-            <element signature="e#1080#1086#0" expanded="true" />
-            <element signature="e#1086#1092#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/addpayform.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="20" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="33" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1032,6 +956,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_static/group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="41" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#984#990#0" expanded="true" />
+            <element signature="e#990#996#0" expanded="true" />
+            <element signature="e#996#1002#0" expanded="true" />
+            <element signature="e#1002#1008#0" expanded="true" />
+            <element signature="e#1008#1014#0" expanded="true" />
+            <element signature="e#1014#1020#0" expanded="true" />
+            <element signature="e#1020#1026#0" expanded="true" />
+            <element signature="e#1026#1032#0" expanded="true" />
+            <element signature="e#1032#1038#0" expanded="true" />
+            <element signature="e#1038#1044#0" expanded="true" />
+            <element signature="e#1044#1050#0" expanded="true" />
+            <element signature="e#1050#1056#0" expanded="true" />
+            <element signature="e#1056#1062#0" expanded="true" />
+            <element signature="e#1062#1068#0" expanded="true" />
+            <element signature="e#1068#1074#0" expanded="true" />
+            <element signature="e#1074#1080#0" expanded="true" />
+            <element signature="e#1080#1086#0" expanded="true" />
+            <element signature="e#1086#1092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/clearall.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1040,10 +1009,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/group.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/addgrp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="501" column="8" lean-forward="false" selection-start-line="501" selection-start-column="8" selection-end-line="501" selection-end-column="8" />
+        <state relative-caret-position="-279">
+          <caret line="589" column="59" lean-forward="false" selection-start-line="589" selection-start-column="59" selection-end-line="589" selection-end-column="59" />
           <folding />
         </state>
       </provider>
