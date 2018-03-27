@@ -20,6 +20,7 @@ route.post('/',(req,res1)=>{
             ).then((res)=>{
                 table.findAll({}).then((res)=>{
                     res1.render('group',{
+                        number:1,
                         arr:res[0].dataValues
                     })
                 })
@@ -60,6 +61,7 @@ route.post('/',(req,res1)=>{
                     table.findAll({}).then((res)=>{
                         console.log(res);
                         res1.render('group',{
+                            number:2,
                             arr:res[0].dataValues,
                             arr1:res[1].dataValues
                         })
@@ -93,7 +95,7 @@ route.post('/',(req,res1)=>{
             table.update(
                 {
                     moneytogive:0,
-                    moneytotake:money
+                    moneytotake:2*money
                 },
                 { where: { id: 1 } }
             ).then((res)=>{
@@ -114,6 +116,7 @@ route.post('/',(req,res1)=>{
                     ).then((res)=>{
                         table.findAll({}).then((res)=>{
                             res1.render('group',{
+                                number:3,
                                 arr:res[0].dataValues,
                                 arr1:res[1].dataValues,
                                 arr2:res[2].dataValues
@@ -152,7 +155,7 @@ route.post('/',(req,res1)=>{
             table.update(
                 {
                     moneytogive:0,
-                    moneytotake:money
+                    moneytotake:3*money
                 },
                 { where: { id: 1 } }
             ).then((res)=>{
@@ -180,6 +183,7 @@ route.post('/',(req,res1)=>{
                         ).then((res)=>{
                             table.findAll({}).then((res)=>{
                                 res1.render('group',{
+                                    number:4,
                                     arr:res[0].dataValues,
                                     arr1:res[1].dataValues,
                                     arr2:res[2].dataValues,
@@ -243,6 +247,7 @@ route.post('/',(req,res1)=>{
                     table.findAll({}).then((res)=>{
                         console.log(res);
                         res1.render('group',{
+                            number:2,
                             arr:res[0].dataValues,
                             arr1:res[1].dataValues
                         })
@@ -283,7 +288,7 @@ route.post('/',(req,res1)=>{
                 table.update(
                     {
                         moneytogive:0,
-                        moneytotake:money
+                        moneytotake:2*money
                     },
                     { where: { id: 2 } }
                 ).then((res)=>{
@@ -297,6 +302,7 @@ route.post('/',(req,res1)=>{
                         table.findAll({}).then((res)=>{
                             console.log(res);
                             res1.render('group',{
+                                number:3,
                                 arr:res[0].dataValues,
                                 arr1:res[1].dataValues,
                                 arr2:res[3].dataValues
@@ -342,7 +348,7 @@ route.post('/',(req,res1)=>{
                 table.update(
                     {
                         moneytogive:0,
-                        moneytotake:money
+                        moneytotake:3*money
                     },
                     { where: { id: 2 } }
                 ).then((res)=>{
@@ -363,6 +369,7 @@ route.post('/',(req,res1)=>{
                             table.findAll({}).then((res)=>{
                                 console.log(res);
                                 res1.render('group',{
+                                    number:4,
                                     arr:res[0].dataValues,
                                     arr1:res[1].dataValues,
                                     arr2:res[2].dataValues,
@@ -431,13 +438,14 @@ route.post('/',(req,res1)=>{
                         table.update(
                             {
                                 moneytogive:0,
-                                moneytotake:money
+                                moneytotake:2*money
                             },
                             { where: { id: 3 } }
                         ).then((res)=>{
                             table.findAll({}).then((res)=>{
                                 console.log(res);
                                 res1.render('group',{
+                                    number:3,
                                     arr:res[0].dataValues,
                                     arr1:res[1].dataValues,
                                     arr2:res[2].dataValues
@@ -490,7 +498,7 @@ route.post('/',(req,res1)=>{
                         table.update(
                             {
                                 moneytogive:0,
-                                moneytotake:money
+                                moneytotake:3*money
                             },
                             { where: { id: 3 } }
                         ).then((res)=>{
@@ -504,6 +512,7 @@ route.post('/',(req,res1)=>{
                                 table.findAll({}).then((res)=>{
                                     console.log(res);
                                     res1.render('group',{
+                                        number:4,
                                         arr:res[0].dataValues,
                                         arr1:res[1].dataValues,
                                         arr2:res[2].dataValues,
@@ -579,13 +588,14 @@ route.post('/',(req,res1)=>{
                         table.update(
                             {
                                 moneytogive:0,
-                                moneytotake:money
+                                moneytotake:3*money
                             },
                             { where: { id: 4 } }
                         ).then((res)=>{
                             table.findAll({}).then((res)=>{
                                 console.log(res);
                                 res1.render('group',{
+                                    number:4,
                                     arr:res[0].dataValues,
                                     arr1:res[1].dataValues,
                                     arr2:res[2].dataValues,
